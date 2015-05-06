@@ -16,9 +16,10 @@ SUPPORT:
 
 If you need commercial support, you can contact:
 
-YetOpen S.r.l.  www.yetopen.it
-iFAX Solutions, Inc  www.ifax.com
+iFAX Solutions, Inc		http://www.ifax.com
+YetOpen S.r.l.			http://www.yetopen.it
+AUnited Co. Ltd. 		http://aunited.ru
 
 LANGUAGES:
 
-If you would like to add support for your language, please translate avantfax/includes/langs/en.php or it.php and email it to david@avantfax.com.
+If you would like to add support for your language, please translate one of the avantfax/includes/langs/ files and create the pull request here or send it to david@avantfax.com.
