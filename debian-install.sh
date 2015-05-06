@@ -22,10 +22,9 @@ fi
 echo "Installing required packages"
 
 # removed libpq4
-apt-get install apache2-mpm-prefork apache2-utils apache2.2-common libapache2-mod-php5 libapr1 libaprutil1 libsqlite3-0 php5-cli php5-common mysql-server imagemagick libtiff4-dev netpbm libnetpbm10-dev libungif-bin libungif4-dev sudo php-mail php-mail-mime php-file php-db php5-mysql psutils wdiff rsync postfix php-mdb2-driver-mysql php-net-smtp php-mail-mime php-mail $OPTPKGS
+apt-get install apache2-mpm-prefork apache2-utils apache2-bin libapache2-mod-php5 libapr1 libaprutil1 libsqlite3-0 php5-cli php5-common mysql-server imagemagick libtiff5-dev netpbm libnetpbm10-dev giflib-tools sudo php-mail php-mail-mime php-file php-db php5-mysql psutils wdiff rsync postfix php-mdb2-driver-mysql php-net-smtp php-mail-mime php-mail $OPTPKGS
 
 echo "Installing AvantFAX and configuring HylaFAX"
-
 ## SETUP SMARTY
 chmod 0770 avantfax/includes/templates/admin_theme/templates_c/ avantfax/includes/templates/admin_theme/cache/  avantfax/includes/templates/main_theme/templates_c/ avantfax/includes/templates/main_theme/cache/
 chown $HTTPDUSER:$HTTPDGROUP avantfax/includes/templates/admin_theme/templates_c/ avantfax/includes/templates/admin_theme/cache/  avantfax/includes/templates/main_theme/templates_c/ avantfax/includes/templates/main_theme/cache/
