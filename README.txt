@@ -22,4 +22,4 @@ AUnited Co. Ltd. 		http://aunited.ru
 
 LANGUAGES:
 
-If you would like to add support for your language, please translate one of the avantfax/includes/langs/ files and create the pull request here or send it to david@avantfax.com.
+If you would like to add support for your language, please go to the transifex https://www.transifex.com/projects/p/avantfax/.
