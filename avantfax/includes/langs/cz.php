@@ -270,7 +270,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "Znovu načíst";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Nový uživatel-detaily";
 $LANG['NEW_USER_MESSAGE'] = "Dobrý den %s,
 
-Tento e-mail obsahuje jméno a heslo pro přístup na AvantFAX. (http://%s)
+Tento e-mail obsahuje jméno a heslo pro přístup na AvantFAX. (%s)
 
 Jméno - %s
 Heslo - %s

@@ -267,7 +267,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "تحديث القائمة";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "تفاصيل مستخدم جديد";
 $LANG['NEW_USER_MESSAGE'] = "مرحبا %s,
 
-هذه الرسالة تحتوي على اسم المستخدم وكلمة المرور لتسجيل الدخول إلى (http://%s)
+هذه الرسالة تحتوي على اسم المستخدم وكلمة المرور لتسجيل الدخول إلى (%s)
 
 Username - %s
 Password - %s

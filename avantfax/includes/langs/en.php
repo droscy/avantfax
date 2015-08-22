@@ -272,7 +272,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "Refresh List";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "New User Details";
 $LANG['NEW_USER_MESSAGE'] = "Hello %s,
 
-This email contains your username and password to log into AvantFAX (http://%s)
+This email contains your username and password to log into AvantFAX (%s)
 
 Username - %s
 Password - %s

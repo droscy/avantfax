@@ -275,7 +275,7 @@ $LANG['NEW_USER_MESSAGE'] = "Merhaba %s,
 
 Bu eposta faks sunucusunu kullanmanız için gereken kullanıcı adı ve şifre bilgisini içeriyor.
 
-AvantFAX (http://%s)
+AvantFAX (%s)
 
 Kullanıcı adınız - %s
 Şifreniz - %s

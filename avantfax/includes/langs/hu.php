@@ -267,7 +267,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "Lista frissítése";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Új Felhasználó Adatai";
 $LANG['NEW_USER_MESSAGE'] = "Hello %s,
 
-Ez az email tartalmazza a belépéshez szükséges felhasználónevét és jelszavát (http://%s)
+Ez az email tartalmazza a belépéshez szükséges felhasználónevét és jelszavát (%s)
 
 Felhasználónév - %s
 Jelszó - %s

@@ -267,7 +267,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "リストの更新";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "新規ユーザーの詳細";
 $LANG['NEW_USER_MESSAGE'] = "こんにちは %s　さん,
 
-このメールは、AvantFAX (http://%s) にログインするためのユーザー名 と パスワード を送信します。
+このメールは、AvantFAX (%s) にログインするためのユーザー名 と パスワード を送信します。
 
 ユーザー名 - %s
 パスワード - %s

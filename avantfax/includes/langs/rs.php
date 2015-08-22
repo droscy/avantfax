@@ -267,7 +267,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "Osveži listu";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Novi detalji korisnika";
 $LANG['NEW_USER_MESSAGE'] = "Zdravo %s,
 
-Ovaj e-pošta sadrži Vaš korisnički nalog i lozinku za prijavljivanje na AvantFAX (http://%s)
+Ovaj e-pošta sadrži Vaš korisnički nalog i lozinku za prijavljivanje na AvantFAX (%s)
 
 Korisnički nalog - %s
 Lozinka - %s

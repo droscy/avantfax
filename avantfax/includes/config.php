@@ -178,6 +178,11 @@
 		exec("hostname", $hostname);
 		$AVANTFAX_SERVERNAME	= (array_key_exists('SERVER_NAME', $_SERVER)) ? $_SERVER['SERVER_NAME'] : implode("", $hostname);
 	}
+
+	if (!isset($AVANTFAX_URL)) {
+		$AVANTFAX_URL = "{$_SERVER['REQUEST_SCHEME']}://{$AVANTFAX_SERVERNAME}" . (!in_array($_SERVER['SERVER_PORT'],array('80','443'))?":{$_SERVER['SERVER_PORT']}":'') . $_SERVER['CONTEXT_PREFIX'];
+	}
+
 	if (!isset($SYSTEM_EMAIL_SIG_HTML))
 		$SYSTEM_EMAIL_SIG_HTML	= "<a href=\"http://www.avantfax.com/\">AvantFAX</a>";
 	

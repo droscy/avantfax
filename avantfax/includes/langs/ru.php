@@ -272,7 +272,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "Обновить список";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Регистрационные данные AvantFAX";
 $LANG['NEW_USER_MESSAGE'] = "Здравствуйте, %s
 
-Это письмо содержит регистрационные данные для входа на <a href=\"http://%s/index.php\">AvantFAX</a>
+Это письмо содержит регистрационные данные для входа на AvantFAX (%s)
 
 Имя для входа - %s
 Пароль - %s

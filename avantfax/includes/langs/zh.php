@@ -268,7 +268,7 @@ $LANG['TITLE_EMAILS'] = "Email地址";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "新用户详细资料";
 $LANG['NEW_USER_MESSAGE'] = "%s您好,
 
-该邮件含有您登录邮件管理系统 AvantFAX (http://%s)的用户名以及密码
+该邮件含有您登录邮件管理系统 AvantFAX (%s)的用户名以及密码
 
 用户名 - %s
 密码 - %s

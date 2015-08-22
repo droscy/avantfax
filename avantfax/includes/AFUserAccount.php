@@ -93,7 +93,7 @@ class AFUserAccount
 	 * @access public
 	 */
 	public function create(array $details) {
-		global $LANG, $SYSTEM_IP, $grep_function, $SUDO, $FAXADDUSER;
+		global $LANG, $AVANTFAX_URL, $grep_function, $SUDO, $FAXADDUSER;
 		
 		$this->load_vals($details);
 		
@@ -142,7 +142,7 @@ class AFUserAccount
 	
 			// email new password to email address
 			send_mail($this->dbdata['email'], get_admin_email(), $LANG['NEW_USER_MESSAGE_SUBJECT'],
-							sprintf($LANG['NEW_USER_MESSAGE'], $this->dbdata['name'], $SYSTEM_IP, $this->dbdata['username'], $pwdxemail));
+							sprintf($LANG['NEW_USER_MESSAGE'], $this->dbdata['name'], $AVANTFAX_URL, $this->dbdata['username'], $pwdxemail));
 			return true;
 		} else {
 			$this->error = "Account creation failed";

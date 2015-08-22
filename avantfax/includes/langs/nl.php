@@ -268,7 +268,7 @@ $LANG['TITLE_EMAILS'] = "Email Adressen";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Nieuw gebruiker gegevens";
 $LANG['NEW_USER_MESSAGE'] = "Hallo %s,
 
-Deze email bevat uw gebruikersnaam en password om in te loggen bij AvantFAX (http://%s)
+Deze email bevat uw gebruikersnaam en password om in te loggen bij AvantFAX (%s)
 
 Gebruikersnaam - %s
 Password - %s

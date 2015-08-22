@@ -268,7 +268,7 @@ $LANG['DISTROLIST_REFRESH_LIST'] = "Atualizar a Lista";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Detalhes do Novo Usu&aacute;rio";
 $LANG['NEW_USER_MESSAGE'] = "Ol&aacute; %s,
 
-Este email cont&ecirc;m o seu nome de usu&aacute;rio e a sua senha para entrar no AvantFAX (http://%s)
+Este email cont&ecirc;m o seu nome de usu&aacute;rio e a sua senha para entrar no AvantFAX (%s)
 
 Nome de usu&aacute;rio - %s
 Senha - %s

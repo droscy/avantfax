@@ -269,7 +269,7 @@ $LANG['TITLE_EMAILS'] = "E-Mail Adressen";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Details Ihres neuen Benutzerkontos";
 $LANG['NEW_USER_MESSAGE'] = "Hallo %s,
 
-Diese E-Mail enth&auml;llt Ihren Benutzernamen und Passwort f&uuml;r die Anmeldung an AvantFAX (http://%s)
+Diese E-Mail enth&auml;llt Ihren Benutzernamen und Passwort f&uuml;r die Anmeldung an AvantFAX (%s)
 
 Benutzername - %s
 Passwort - %s

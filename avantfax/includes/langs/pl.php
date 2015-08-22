@@ -270,7 +270,7 @@ $LANG['TITLE_EMAILS'] = "Adresy e-mail";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Nowe dane użytkownika";
 $LANG['NEW_USER_MESSAGE'] = "Witaj %s,
 
-Ten e-mail zawiera Twoją nazwę użytkownika i hasło potrzebne do zalogowania się do serwera faksów AvantFAX (http://%s)
+Ten e-mail zawiera Twoją nazwę użytkownika i hasło potrzebne do zalogowania się do serwera faksów AvantFAX (%s)
 
 Użytkownik - %s
 Hasło - %s

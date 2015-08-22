@@ -268,7 +268,7 @@ $LANG['TITLE_EMAILS'] = "E-postadresser";
 $LANG['NEW_USER_MESSAGE_SUBJECT'] = "Nya anv�ndaruppgifter";
 $LANG['NEW_USER_MESSAGE'] = "Hej %s,
 
-Det h�r brevet inneh�ller ditt anv�ndarnamn och l�senord f�r att logga in p� Avisita och Rits faxsystem AvantFAX (http://%s)
+Det h�r brevet inneh�ller ditt anv�ndarnamn och l�senord f�r att logga in p� Avisita och Rits faxsystem AvantFAX (%s)
 
 Anv�ndarnamn - %s
 L�senord - %s
