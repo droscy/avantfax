@@ -56,7 +56,7 @@
 <hr style="width: 20em; margin-left:auto; margin-right:auto" />
 {/if}
 <p><label for="new_faxnum">{$LANG.CONTACT_HEADER_NEWFAX}:</label> <input type="text" name="new_faxnum" id="new_faxnum" value="{$fvalues.new_faxnum}" maxlength="20" style="background: #FFFFCC;" /></p>
-<p><label for="new_to_person">{$LANG.TO}:</label> <input type="text" name="new_to_person" id="new_to_person" value="{$fvalues.new_to_person}" size="25" maxlength="30" style="background: #FFFFCC;" /></p>
+<p><label for="new_to_person">{$LANG.TO_PERSON}:</label> <input type="text" name="new_to_person" id="new_to_person" value="{$fvalues.new_to_person}" size="25" maxlength="30" style="background: #FFFFCC;" /></p>
 <p><label for="new_to_address">{$LANG.TO_ADDRESS}:</label> <input type="text" name="new_to_address" id="new_to_address" value="{$fvalues.new_to_address}" size="25" maxlength="50" style="background: #FFFFCC;" /></p>
 <p><label for="new_to_zip">{$LANG.TO_ZIP}:</label> <input type="text" name="new_to_zip" id="new_to_zip" value="{$fvalues.new_to_zip}" size="25" maxlength="50" style="background: #FFFFCC;" /></p>
 <p><label for="new_to_city">{$LANG.TO_CITY}:</label> <input type="text" name="new_to_city" id="new_to_city" value="{$fvalues.new_to_city}" size="25" maxlength="50" style="background: #FFFFCC;" /></p>

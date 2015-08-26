@@ -30,13 +30,13 @@ $LANG['TO'] = "A";
 $LANG['DATE_START'] = "Data inizio";
 $LANG['DATE_END'] = "Data fine";
 
-$LANG['TO_PERSON'] = "Attn.";
-$LANG['TO_COMPANY'] = "Attn. Azienda";
-$LANG['TO_LOCATION'] = "Per Ufficio";
+$LANG['TO_PERSON'] = "All'attenzione di";
+$LANG['TO_COMPANY'] = "Azienda";
+$LANG['TO_LOCATION'] = "Ufficio";
 $LANG['TO_ADDRESS'] = "Indirizzo";
 $LANG['TO_CITY'] = "Citt&agrave;";
 $LANG['TO_ZIP'] = "CAP";
-$LANG['TO_VOICENUMBER'] = "Attn. n° tel";
+$LANG['TO_VOICENUMBER'] = "Telefono";
 
 $LANG['MY_COMPANY'] = "Nome Azienda";
 $LANG['MY_LOCATION'] = "Nome Ufficio";
@@ -71,8 +71,8 @@ $LANG['EMAIL'] = "E-mail";
 $LANG['SELECT'] = "Scegli";
 $LANG['CONTACT_SAVED'] = "L'indirizzo email è stato salvato";
 $LANG['CONTACT_DELETED'] = "L'indirizzo email è stato eliminato";
-$LANG['RUBRICA_SAVED'] = "Dettagli dell'azienda salvati";
-$LANG['RUBRICA_DELETED'] = "Azienda eliminata";
+$LANG['RUBRICA_SAVED'] = "Dettagli del contatto salvati";
+$LANG['RUBRICA_DELETED'] = "Contatto eliminato";
 
 $LANG['FAX_FILES'] = "Scegli il file per il FAX";
 $LANG['FAX_DEST'] = "Numeri di fax dei destinatari";
@@ -133,7 +133,7 @@ $LANG['ARCHIVE_SHOW'] = "Archivio - mostra";
 
 $LANG['CONTACT_HEADER_EMAIL'] = "Email";
 $LANG['CONTACT_HEADER_FAX'] = "Fax";
-$LANG['CONTACT_HEADER_COMPANY'] = "Azienda";
+$LANG['CONTACT_HEADER_COMPANY'] = "Contatto";
 $LANG['CONTACT_HEADER_NEWFAX'] = "Nuovo numero di fax";
 $LANG['CONTACT_HEADER_FAXNUM'] = "Numero di fax";
 $LANG['NEW_ENTRY'] = "Nuovo record";
@@ -245,8 +245,8 @@ $LANG['RESETTING_PASSWORD'] = "La password è stata inviata all'indirizzo da te 
 
 $LANG['SEARCH_TITLE'] = "Cerca";
 $LANG['KEYWORDS'] = "Parole chiave";
-$LANG['COMPANY_SEARCH'] = "Cerca azienda";
-$LANG['COMPANY_LIST'] = "Elenco delle aziende";
+$LANG['COMPANY_SEARCH'] = "Cerca contatto";
+$LANG['COMPANY_LIST'] = "Elenco dei contatti";
 $LANG['SENT_RECVD'] = "Spediti / Ricevuti";
 $LANG['BOTH_SENT_RECVD'] = "Spediti e ricevuti";
 $LANG['ONLY_MY_SENT'] = "Solo i miei fax spediti";
