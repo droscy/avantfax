@@ -1,4 +1,4 @@
--- AvantFAX 3.2.0 MySQL structure
+-- AvantFAX 3.3.5 MySQL structure
 
 -- Distribution Lists
 CREATE TABLE IF NOT EXISTS DistroList (
@@ -98,6 +98,9 @@ email          VARCHAR(100),
 description    VARCHAR(30),
 to_person      VARCHAR(150),
 to_location    VARCHAR(150),
+to_address     VARCHAR(50) NULL,
+to_zip         VARCHAR(6) NULL,
+to_city        VARCHAR(50) NULL,
 to_voicenumber VARCHAR(150),
 faxcatid       INT,
 faxfrom        INT DEFAULT 0,
