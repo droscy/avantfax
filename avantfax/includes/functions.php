@@ -529,9 +529,19 @@
 		$use_coverpage = ($coverpage) ? '-C ' . $INSTALLDIR . '/images/' . $whichcover : "-n";
 		
 		if (count($files)) {
-			$faxfiles = implode(" ", $files);
-			
-			return exec_sendfax("$SENDFAX $nrequeue $use_coverpage $sf_args $modem $destinations $faxfiles");
+			//###Added the following nine lines as part of a coverpage bugfix
+			if (isset($coverpage)) {
+				$NUM_PAGES_FOLLOW = count($files);
+				$psfile = $TMPDIR.genpasswd().".ps";
+				$fcommand = "$FAXCOVER $cp_args -C '" . $INSTALLDIR . "/images/$whichcover' -p $NUM_PAGES_FOLLOW -n $first_dest > $psfile";
+				$o = exec($fcommand, $output, $retval);
+				array_unshift($files, $psfile);
+				$faxfiles = implode(" ", $files);
+				return exec_sendfax("$SENDFAX $nrequeue -n $sf_args $modem $destinations $faxfiles");
+			} else {
+				$faxfiles = implode(" ", $files);
+				return exec_sendfax("$SENDFAX $nrequeue -n $sf_args $modem $destinations $faxfiles");
+			}
 		} else { // SEND ONLY COVER PAGE AS FAX
 			// make ps out of coverpage and send it
 			$psfile = $TMPDIR.genpasswd().".ps";
@@ -1043,6 +1053,7 @@
 		
 		echo "convert2pdf> starting\n";
 
+		$pdflist = NULL;
 		for ($i = 0; $i < count($convertfiles); $i++) {
 			if (preg_match("/\.tif/i", $convertfiles[$i])) {
 				$convert_tiff[] = $convertfiles[$i];
@@ -1051,21 +1062,23 @@
 			} elseif (preg_match("/cover/i", $convertfiles[$i])) {
 				$coverpage = $convertfiles[$i];
 			} else {
-				$list_pdf .= $convertfiles[$i]." ";
+				//### Changed the following line to make pdfs come last
+				$pdflist .= $convertfiles[$i]." ";
 			}
 		}
 		
 		// start timing how long it takes to convert faxes
 		$time_start = microtime(true);
 		
-		// convert cover page (.ps) to PDF
-		if (isset($coverpage)) {
-			echo "convert2pdf> converting coverpage to pdf\n";
-			$tmpcover = tmpfilename('pdf');
-			$cmd = sprintf($GSCMD, $tmpcover, $coverpage);
-			system_v($cmd);
-			$list_pdf = "$tmpcover $list_pdf";
-		}
+		//### commented out this section to prevent sendfax integrated cover generation
+		//// convert cover page (.ps) to PDF
+		//if (isset($coverpage)) {
+		//	echo "convert2pdf> converting coverpage to pdf\n";
+		//	$tmpcover = tmpfilename('pdf');
+		//	$cmd = sprintf($GSCMD, $tmpcover, $coverpage);
+		//	system_v($cmd);
+		//	$list_pdf = "$tmpcover $list_pdf";
+		//}
 		
 		// convert the PostScript files to PDF
 		if (isset($convert_ps)) {
@@ -1086,6 +1099,9 @@
 				$del_tif[] = $tmptif;
 			}
 		}
+
+		//Add pdflist to list_pdf
+		$list_pdf .= $pdflist." ";
 		
 		// create the final PDF
 		if (isset($list_pdf)) {
