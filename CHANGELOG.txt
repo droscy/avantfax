@@ -1,3 +1,10 @@
+AvantFAX 3.3.5b
+- Written manual installation procedure
+- Corrected url in email for new user
+- Updated template for editing Address Book
+- Updated it translation
+- Fixed missing right cover page
+
 AvantFAX 3.3.5
 - Added ability to play a sound (requires DB upgrade)
 
