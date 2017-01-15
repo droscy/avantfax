@@ -27,9 +27,9 @@
 	$formdata->newRule('category',		NULL, FR_NUMBER);
 	$formdata->newRule('kw');
 	$formdata->newRule('faxid');
-	$formdata->newRule('start_day',		date("d"));
-	$formdata->newRule('start_month',	date("m"));
-	$formdata->newRule('start_year',	date("Y"));
+	$formdata->newRule('start_day',		'01');
+	$formdata->newRule('start_month',	'01');
+	$formdata->newRule('start_year',	'2014');
 	$formdata->newRule('end_day',		date("d"));
 	$formdata->newRule('end_month',		date("m"));
 	$formdata->newRule('end_year',		date("Y"));
@@ -189,7 +189,7 @@
 	}
 	
 	$year_list["*"] = "";
-	for ($i = 2004; $i < 2016; $i++) {
+	for ($i = 2014; $i <= date('Y'); $i++) {
 		$year_list["$i"] = $i;
 	}
 
