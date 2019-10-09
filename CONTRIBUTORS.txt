@@ -32,3 +32,6 @@ Maxxer
 Paolo Basenghi
 sswitzer
 Carlos Monteiro
+Lorenzo Milesi
+Vitaliy Zhukov
+Simone Rossetto

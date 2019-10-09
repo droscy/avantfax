@@ -46,7 +46,7 @@
 <p><label for="to_voicenumber{$index}">{$LANG.TO_VOICENUMBER}:</label> <input type="text" name="to_voicenumber[{$index}]" id="to_voicenumber{$index}" value="{$faxnumbers[r].to_voicenumber}" size="25" maxlength="30" /></p>
 
 {if $SUPERUSER}
-<p><label for="faxcatid{$index}">{$LANG.CATEGORY}:</label> {html_options name=faxcatid[$index] id=faxcatid$index options=$faxcategories selected=$faxnumbers[r].faxcatid}</p>
+<p><label for="faxcatid{$index}">{$LANG.CATEGORY}:</label> {html_options name="faxcatid[$index]" id="faxcatid$index" options=$faxcategories selected=$faxnumbers[r].faxcatid}</p>
 {/if}
 <p><label for="description{$index}">{$LANG.DESCRIPTION}:</label> <input type="text" name="description[{$index}]" id="description{$index}" value="{$faxnumbers[r].description}" size="25" maxlength="30" /></p>
 

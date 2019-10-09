@@ -11,6 +11,7 @@
  * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/vendor/autoload.php';
 	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/includes/classes.php';
 	
 	if (empty($_SERVER['argv'][1])) {

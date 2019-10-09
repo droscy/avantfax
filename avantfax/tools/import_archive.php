@@ -11,6 +11,7 @@
  * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
+	require_once '/var/www/avantfax/vendor/autoload.php';
 	require_once '/var/www/avantfax/includes/classes.php';
 	
 	if (empty($_SERVER['argv'][2])) {

@@ -1,0 +1,540 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "07b1e5e0e97b66b69255eb1bca893056",
+    "packages": [
+        {
+            "name": "pear-pear.php.net/Archive_Tar",
+            "version": "1.4.7",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/Archive_Tar-1.4.7.tgz"
+            },
+            "require": {
+                "php": ">=5.2.0.0"
+            },
+            "replace": {
+                "pear-pear/archive_tar": "== 1.4.7.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "New BSD License"
+            ],
+            "description": "This class provides handling of tar files in PHP.\nIt supports creating, listing, extracting and adding to tar files.\nGzip support is available if PHP has the zlib extension built-in or\nloaded. Bz2 compression is also supported with the bz2 extension loaded.\nAlso Lzma2 compressed archives are supported with xz extension."
+        },
+        {
+            "name": "pear-pear.php.net/Console_Getopt",
+            "version": "1.4.2",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/Console_Getopt-1.4.2.tgz"
+            },
+            "require": {
+                "php": ">=5.4.0.0"
+            },
+            "replace": {
+                "pear-pear/console_getopt": "== 1.4.2.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "This is a PHP implementation of &quot;getopt&quot; supporting both\nshort and long options."
+        },
+        {
+            "name": "pear-pear.php.net/MDB2",
+            "version": "2.5.0b5",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/MDB2-2.5.0b5.tgz"
+            },
+            "require": {
+                "pear-pear.php.net/pear": ">=1.3.6.0",
+                "php": ">=5.2.0.0"
+            },
+            "replace": {
+                "pear-pear/mdb2": "== 2.5.0.0-beta5"
+            },
+            "suggest": {
+                "fbsql-pear-pear.php.net/MDB2_Driver_fbsql": ">=0.3.0.0",
+                "ibase-pear-pear.php.net/MDB2_Driver_ibase": ">=1.5.0.0",
+                "mssql-pear-pear.php.net/MDB2_Driver_mssql": ">=1.5.0.0",
+                "mysql-pear-pear.php.net/MDB2_Driver_mysql": ">=1.5.0.0",
+                "mysqli-pear-pear.php.net/MDB2_Driver_mysqli": ">=1.5.0.0",
+                "oci8-pear-pear.php.net/MDB2_Driver_oci8": ">=1.5.0.0",
+                "odbc-pear-pear.php.net/MDB2_Driver_odbc": ">=0.2.0.0",
+                "pgsql-pear-pear.php.net/MDB2_Driver_pgsql": ">=1.5.0.0",
+                "querysim-pear-pear.php.net/MDB2_Driver_querysim": ">=0.7.0.0",
+                "sqlite-pear-pear.php.net/MDB2_Driver_sqlite": ">=1.5.0.0",
+                "sqlsrv-pear-pear.php.net/MDB2_Driver_sqlsrv": ">=1.5.0.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "BSD License"
+            ],
+            "description": "PEAR MDB2 is a merge of the PEAR DB and Metabase php database abstraction layers.\n\nIt provides a common API for all supported RDBMS. The main difference to most\nother DB abstraction packages is that MDB2 goes much further to ensure\nportability. MDB2 provides most of its many features optionally that\ncan be used to construct portable SQL statements:\n* Object-Oriented API\n* A DSN (data source name) or array format for specifying database servers\n* Datatype abstraction and on demand datatype conversion\n* Various optional fetch modes to fix portability issues\n* Portable error codes\n* Sequential and non sequential row fetching as well as bulk fetching\n* Ability to make buffered and unbuffered queries\n* Ordered array and associative array for the fetched rows\n* Prepare/execute (bind) named and unnamed placeholder emulation\n* Sequence/autoincrement emulation\n* Replace emulation\n* Limited sub select emulation\n* Row limit emulation\n* Transactions/savepoint support\n* Large Object support\n* Index/Unique Key/Primary Key support\n* Pattern matching abstraction\n* Module framework to load advanced functionality on demand\n* Ability to read the information schema\n* RDBMS management methods (creating, dropping, altering)\n* Reverse engineering schemas from an existing database\n* SQL function call abstraction\n* Full integration into the PEAR Framework\n* PHPDoc API documentation"
+        },
+        {
+            "name": "pear-pear.php.net/MDB2_Driver_mysqli",
+            "version": "1.5.0b4",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/MDB2_Driver_mysqli-1.5.0b4.tgz"
+            },
+            "require": {
+                "ext-mysqli": "*",
+                "pear-pear.php.net/mdb2": ">=2.5.0.0",
+                "php": ">=5.2.0.0"
+            },
+            "replace": {
+                "pear-pear/mdb2_driver_mysqli": "== 1.5.0.0-beta4"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "BSD License"
+            ],
+            "description": "This is the MySQLi MDB2 driver."
+        },
+        {
+            "name": "pear-pear.php.net/PEAR",
+            "version": "1.10.9",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/PEAR-1.10.9.tgz"
+            },
+            "require": {
+                "ext-pcre": "*",
+                "ext-xml": "*",
+                "pear-pear.php.net/archive_tar": ">=1.4.0.0",
+                "pear-pear.php.net/console_getopt": ">=1.4.1.0",
+                "pear-pear.php.net/structures_graph": ">=1.1.0.0",
+                "pear-pear.php.net/xml_util": ">=1.3.0.0",
+                "php": ">=5.4.0.0"
+            },
+            "conflict": {
+                "pear-pear.php.net/pear_frontend_gtk": "<0.4.0.0",
+                "pear-pear.php.net/pear_frontend_web": "<=0.4.0.0"
+            },
+            "replace": {
+                "pear-pear/pear": "== 1.10.9.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "New BSD License"
+            ],
+            "description": "The PEAR package contains:\n * the PEAR installer, for creating, distributing\n   and installing packages\n * the PEAR_Exception PHP5 error handling mechanism\n * the PEAR_ErrorStack advanced error handling mechanism\n * the PEAR_Error error handling mechanism\n * the OS_Guess class for retrieving info about the OS\n   where PHP is running on\n * the System class for quick handling of common operations\n   with files and directories\n * the PEAR base class\n  Features in a nutshell:\n  * full support for channels\n  * pre-download dependency validation\n  * new package.xml 2.0 format allows tremendous flexibility while maintaining BC\n  * support for optional dependency groups and limited support for sub-packaging\n  * robust dependency support\n  * full dependency validation on uninstall\n  * remote install for hosts with only ftp access - no more problems with\n    restricted host installation\n  * full support for mirroring\n  * support for bundling several packages into a single tarball\n  * support for static dependencies on a url-based package\n  * support for custom file roles and installation tasks"
+        },
+        {
+            "name": "pear-pear.php.net/Structures_Graph",
+            "version": "1.1.1",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/Structures_Graph-1.1.1.tgz"
+            },
+            "require": {
+                "php": ">=5.3.0.0"
+            },
+            "replace": {
+                "pear-pear/structures_graph": "== 1.1.1.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "description": "Structures_Graph is a package for creating and manipulating graph datastructures. It allows building of directed\nand undirected graphs, with data and metadata stored in nodes. The library provides functions for graph traversing\nas well as for characteristic extraction from the graph topology."
+        },
+        {
+            "name": "pear-pear.php.net/XML_Util",
+            "version": "1.4.3",
+            "dist": {
+                "type": "file",
+                "url": "https://pear.php.net/get/XML_Util-1.4.3.tgz"
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.4.0.0"
+            },
+            "replace": {
+                "pear-pear/xml_util": "== 1.4.3.0"
+            },
+            "type": "pear-library",
+            "autoload": {
+                "classmap": [
+                    ""
+                ]
+            },
+            "include-path": [
+                "/"
+            ],
+            "license": [
+                "BSD License"
+            ],
+            "description": "Selection of methods that are often needed when working with XML documents.  Functionality includes creating of attribute lists from arrays, creation of tags, validation of XML names and more."
+        },
+        {
+            "name": "pear/console_getopt",
+            "version": "v1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Getopt.git",
+                "reference": "6c77aeb625b32bd752e89ee17972d103588b90c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Getopt/zipball/6c77aeb625b32bd752e89ee17972d103588b90c0",
+                "reference": "6c77aeb625b32bd752e89ee17972d103588b90c0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Console": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net",
+                    "role": "Helper"
+                },
+                {
+                    "name": "Andrei Zmievski",
+                    "email": "andrei@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Stig Bakken",
+                    "email": "stig@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "More info available on: http://pear.php.net/package/Console_Getopt",
+            "time": "2019-02-06T16:52:33+00:00"
+        },
+        {
+            "name": "pear/mail",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Mail.git",
+                "reference": "9609ed5e42ac5b221dfd9af85de005c59d418ee7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Mail/zipball/9609ed5e42ac5b221dfd9af85de005c59d418ee7",
+                "reference": "9609ed5e42ac5b221dfd9af85de005c59d418ee7",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear-core-minimal": "~1.9",
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "pear/pear": "*"
+            },
+            "suggest": {
+                "pear/net_smtp": "Install optionally via your project's composer.json"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mail": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chuck Hagenbuch",
+                    "email": "chuck@horde.org",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "email": "richard@phpguru.org",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Aleksander Machniak",
+                    "email": "alec@alec.pl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Class that provides multiple interfaces for sending emails.",
+            "homepage": "http://pear.php.net/package/Mail",
+            "time": "2017-04-11T17:27:29+00:00"
+        },
+        {
+            "name": "pear/mail_mime",
+            "version": "1.10.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Mail_Mime.git",
+                "reference": "ff6ccf2611f645ee158269bd8910046c1faf806b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Mail_Mime/zipball/ff6ccf2611f645ee158269bd8910046c1faf806b",
+                "reference": "ff6ccf2611f645ee158269bd8910046c1faf806b",
+                "shasum": ""
+            },
+            "require": {
+                "pear/pear-core-minimal": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mail": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "./"
+            ],
+            "license": [
+                "BSD-3-clause"
+            ],
+            "authors": [
+                {
+                    "name": "Cipriano Groenendal",
+                    "email": "cipri@php.net",
+                    "role": "Lead"
+                },
+                {
+                    "name": "Aleksander Machniak",
+                    "email": "alec@php.net",
+                    "role": "Lead"
+                }
+            ],
+            "description": "Mail_Mime provides classes to create MIME messages",
+            "homepage": "http://pear.php.net/package/Mail_Mime",
+            "time": "2019-09-25T06:00:47+00:00"
+        },
+        {
+            "name": "pear/pear-core-minimal",
+            "version": "v1.10.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/pear-core-minimal.git",
+                "reference": "742be8dd68c746a01e4b0a422258e9c9cae1c37f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/pear-core-minimal/zipball/742be8dd68c746a01e4b0a422258e9c9cae1c37f",
+                "reference": "742be8dd68c746a01e4b0a422258e9c9cae1c37f",
+                "shasum": ""
+            },
+            "require": {
+                "pear/console_getopt": "~1.4",
+                "pear/pear_exception": "~1.0"
+            },
+            "replace": {
+                "rsky/pear-core-min": "self.version"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "src/"
+            ],
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Weiske",
+                    "email": "cweiske@php.net",
+                    "role": "Lead"
+                }
+            ],
+            "description": "Minimal set of PEAR core files to be used as composer dependency",
+            "time": "2019-03-13T18:15:44+00:00"
+        },
+        {
+            "name": "pear/pear_exception",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/PEAR_Exception.git",
+                "reference": "8c18719fdae000b690e3912be401c76e406dd13b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/8c18719fdae000b690e3912be401c76e406dd13b",
+                "reference": "8c18719fdae000b690e3912be401c76e406dd13b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "class",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PEAR": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "."
+            ],
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Helgi Thormar",
+                    "email": "dufuz@php.net"
+                },
+                {
+                    "name": "Greg Beaver",
+                    "email": "cellog@php.net"
+                }
+            ],
+            "description": "The PEAR Exception base class.",
+            "homepage": "https://github.com/pear/PEAR_Exception",
+            "keywords": [
+                "exception"
+            ],
+            "time": "2015-02-10T20:07:52+00:00"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v3.1.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+                "reference": "dd55b23121e55a3b4f1af90a707a6c4e5969530f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "libs/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2018-09-12T20:54:16+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "pear-pear.php.net/mdb2": 10,
+        "pear-pear.php.net/mdb2_driver_mysqli": 10
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

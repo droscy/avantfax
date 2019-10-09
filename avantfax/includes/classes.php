@@ -14,21 +14,13 @@ require_once 'config.php';
 
 
 /**
- * __autoload function
- *
- * @param string class_name
- */
-function __autoload($class_name) {
-	require_once $class_name . '.php';
-}
-
-/**
  * AFSmarty
  */
 class AFSmarty extends Smarty
 {
 	public function __construct() {
-		$this->plugins_dir[]	= PLUGINS_DIR;
+		parent::__construct();
+		$this->addPluginsDir(PLUGINS_DIR);
 	}
 
 	public function no_cache() {
@@ -46,11 +38,11 @@ class AFSmarty extends Smarty
 class AdminSmarty extends AFSmarty
 {
 	public function __construct() {
-		$this->template_dir		= ADMINTHEME_DIR . 'templates';
-		$this->compile_dir		= ADMINTHEME_DIR . 'templates_c';
-		$this->config_dir		= ADMINTHEME_DIR . 'configs';
-		$this->cache_dir		= ADMINTHEME_DIR . 'cache';
 		parent::__construct();
+		$this->setTemplateDir(ADMINTHEME_DIR . 'templates');
+		$this->setCompileDir(ADMINTHEME_DIR . 'templates_c');
+		$this->addConfigDir(ADMINTHEME_DIR . 'configs');
+		$this->setCacheDir(ADMINTHEME_DIR . 'cache');
 	}
 }
 
@@ -61,11 +53,11 @@ class AdminSmarty extends AFSmarty
 class UserSmarty extends AFSmarty
 {
 	public function __construct() {
-		$this->template_dir		= USERTHEME_DIR . 'templates';
-		$this->compile_dir		= USERTHEME_DIR . 'templates_c';
-		$this->config_dir		= USERTHEME_DIR . 'configs';
-		$this->cache_dir		= USERTHEME_DIR . 'cache';
 		parent::__construct();
+		$this->setTemplateDir(USERTHEME_DIR . 'templates');
+		$this->setCompileDir(USERTHEME_DIR . 'templates_c');
+		$this->addConfigDir(USERTHEME_DIR . 'configs');
+		$this->setCacheDir(USERTHEME_DIR . 'cache');
 	}
 }
 

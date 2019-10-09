@@ -15,10 +15,6 @@
 define('SQL_NONE',	1);
 define('SQL_ALL',	2);
 
-require_once 'MDB2.php';
-require_once 'MDB2/Driver/mysql.php';
-require_once 'MDB2/Driver/Datatype/mysql.php';
-
 // remove printing of deprecated and strict warning
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 

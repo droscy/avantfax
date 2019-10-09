@@ -41,10 +41,9 @@ Manual installation
  
 You will need a working installation of the following:
   - HylaFAX 4.4, HylaFAX 6, or HylaFAX EE 3 & 4
-  - PHP 5
-  - PHP PEAR 5 including MDB2_driver_mysql, Mail and Mail_Mime
-  - PHP mbstring - for improved UTF-8 sorting support (optional)
-  - PHP MySQL 5
+  - PHP 5 or 7
+  - PHP MySQL
+  - composer 1.9.0
   - MySQL server 4.1.12 or better (see Important Notes below)
   - Apache
   - ImageMagick

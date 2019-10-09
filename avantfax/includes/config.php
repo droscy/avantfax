@@ -10,6 +10,7 @@
  * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
+	//ini_set('display_errors',1);  // enable for debug
 	error_reporting(E_ALL);
 	ini_set('magic_quotes_runtime', false);
     setlocale(LC_CTYPE, "it_IT.UTF-8");
@@ -18,7 +19,7 @@
 		exit("Error: register_globals must be set to Off in /etc/php.ini");
 	}
 	
-	$AVANTFAX_VERSION	= '3.3.5';
+	$AVANTFAX_VERSION	= '3.3.5-2';
 	
 	$INSTALLDIR	= realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR);
 	

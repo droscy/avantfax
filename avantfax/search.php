@@ -10,6 +10,7 @@
  * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
+	require_once 'vendor/autoload.php';
 	require_once 'includes/classes.php';
 	
 	$server = "http://".$_SERVER['SERVER_NAME'].dirname($_SERVER['SCRIPT_NAME']);

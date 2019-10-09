@@ -1,15 +1,24 @@
-AvantFAX 3.3.5b
+AvantFAX 3.3.5-2
+- Added support for PHP7 (with mysqli interface)
+- Moved MDB2 library to composer
+- Joined original autoload with new composer style
+
+
+AvantFAX 3.3.5-1
 - Written manual installation procedure
 - Corrected url in email for new user
 - Updated template for editing Address Book
 - Updated it translation
 - Fixed missing right cover page
 
+
 AvantFAX 3.3.5
 - Added ability to play a sound (requires DB upgrade)
 
+
 AvantFAX 3.3.4
 - Added Address and City to addressbook (requires DB upgrade)
+
 
 AvantFAX 3.3.3
 - includes/avantfaxcron.php

@@ -10,6 +10,8 @@
  * @copyright	2007 - 2008 iFAX Solutions, Inc.
  * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
+
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/vendor/autoload.php';
 	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/includes/classes.php';
 	
 	$criteria = array(

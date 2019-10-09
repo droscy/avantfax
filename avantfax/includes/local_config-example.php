@@ -18,14 +18,14 @@
 	define('AFDB_USER',		'avantfax');	// username
 	define('AFDB_PASS',		'd58fe49');		// password
 	define('AFDB_NAME',		'avantfax');	// database name
-	define('AFDB_ENGINE',	'mysql');		// database engine: mysql
+	define('AFDB_ENGINE',	'mysqli');		// database engine: mysql (for PHP5), mysqli (for PHP7)
 	define('AFDB_HOST',		'localhost');	// database host
 	
 	//
 	//	HYLAFAX SETTINGS
 	//
 	$BINARYDIR			= '/usr/bin';		// typical on Linux, while /usr/local/bin would be typical for FreeBSD
-	$HYLAFAX_PREFIX		= '/usr';			// if you installed hylafax from source, your installation may default to /usr/local
+	$HYLAFAX_PREFIX	= '/usr';			// if you installed hylafax from source, your installation may default to /usr/local
 	$HYLASPOOL			= '/var/spool/hylafax';
 	
 	// Use HylaFAX's tiff2ps script (/var/spool/hylafax/bin/tiff2ps) instead of AvantFAX's tiff2ps functionality

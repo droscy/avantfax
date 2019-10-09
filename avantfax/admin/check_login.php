@@ -10,6 +10,7 @@
  * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
+	require_once "../vendor/autoload.php";
 	require_once "../includes/classes.php";
 	
 	avantfax_session();
