@@ -13,7 +13,8 @@
 
 // # 0 * * * *       /var/www/avantfax/includes/phb.php
 
-	require_once 'classes.php';
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/vendor/autoload.php';
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/includes/classes.php';
 	
 	$handle = fopen($PHONEBOOK, 'w');
 	fputs($handle, "PBOOK1.1");

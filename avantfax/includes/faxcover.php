@@ -17,8 +17,9 @@
 	example: 0 0 32 0 0 (Attention: XXXX-to) ts
 	becomes: 0 0 32 0 0 (Attention: Recipient's name) ts
 */
-	
-	require_once 'classes.php';
+
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/vendor/autoload.php';
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/includes/classes.php';
 	
 	$options = getopt("t:c:p:l:m:z:r:v:x:C:D:L:N:V:X:s:f:n:M:");
 	

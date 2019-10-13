@@ -12,7 +12,9 @@
  */
 
 // # 0 0 * * *       /var/www/avantfax/includes/avantfaxcron.php -t 2
-	require_once 'classes.php';
+
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/vendor/autoload.php';
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/includes/classes.php';
 
 	$options = getopt("i:t:d:");
 	

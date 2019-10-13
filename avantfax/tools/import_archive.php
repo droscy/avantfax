@@ -11,8 +11,8 @@
  * @license		http://www.gnu.org/copyleft/gpl.html GNU/GPL
  */
 
-	require_once '/var/www/avantfax/vendor/autoload.php';
-	require_once '/var/www/avantfax/includes/classes.php';
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/vendor/autoload.php';
+	require realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR).'/includes/classes.php';
 	
 	if (empty($_SERVER['argv'][2])) {
 		exit("usage: ".$_SERVER['argv'][0]." faxPath faxCategoryId\nExample: ".$_SERVER['argv'][0]." /var/www/avantfax/faxes/ 3\n");
