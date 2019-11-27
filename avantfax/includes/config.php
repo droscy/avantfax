@@ -11,7 +11,7 @@
  */
 
 	//ini_set('display_errors',1);  // enable for debug
-	error_reporting(E_ALL);
+	error_reporting(E_ALL & ~E_NOTICE);
 	ini_set('magic_quotes_runtime', false);
     setlocale(LC_CTYPE, "it_IT.UTF-8");
 	
@@ -353,7 +353,7 @@
 	$ARCHIVE		= $INSTALLDIR.DIRECTORY_SEPARATOR.'faxes'.DIRECTORY_SEPARATOR.'recvd';
 	$ARCHIVE_SENT	= $INSTALLDIR.DIRECTORY_SEPARATOR.'faxes'.DIRECTORY_SEPARATOR.'sent';
 	$TMPDIR			= $INSTALLDIR.DIRECTORY_SEPARATOR.'tmp'.DIRECTORY_SEPARATOR;
-	$PHONEBOOK		= $INSTALLDIR.DIRECTORY_SEPARATOR.'pbook.phb'; // phone book for WHFC
+	$PHONEBOOK		= $TMPDIR.'pbook.phb'; // phone book for WHFC
 	$FAXCOVER		= $INSTALLDIR.DIRECTORY_SEPARATOR.'includes'.DIRECTORY_SEPARATOR.'faxcover.php';
 	
 	// tiff

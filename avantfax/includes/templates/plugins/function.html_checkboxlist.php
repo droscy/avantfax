@@ -40,7 +40,7 @@
  */
 function smarty_function_html_checkboxlist($params, &$smarty)
 {
-    require_once $smarty->_get_plugin_filepath('shared','escape_special_chars');
+    $smarty->loadPlugin('smarty_shared_escape_special_chars');
 
     $name = 'checkbox';
     $values = null;

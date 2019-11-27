@@ -578,7 +578,7 @@
 			$result = str_replace(")", "", $result);
 			//	request id is 80 (group id 80) for host localhost (3 files)
 			//	request id is 81 (group id 81) for host localhost (1 file)
-			$output = split(" ", $result);
+			$output = explode(" ", $result);
 			
 			return array('jobid' => $output[3], 'groupid' => $output[6], 'host' => $output[9], 'numfiles' => $output[10]);
 		}

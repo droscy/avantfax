@@ -283,7 +283,7 @@ class FaxPDFArchive
 					$query .= " AND userid is not null ";
 				}
 				
-				$query .= " AND modemdev is null ";
+				$query .= " AND COALESCE(modemdev,'') = ''";
 				break;
 			case "r": // show only received faxes I can view
 				if ($ENABLE_DID_ROUTING) {				// DID
