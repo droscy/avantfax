@@ -1,3 +1,9 @@
+AvantFAX 3.3.5-3
+- Replaced functions that have been removed from PHP7 and Smarty3
+- Adapted templates for larger monitors
+- Changed some Italian translations to be more "friendly" in the context where they are used
+
+
 AvantFAX 3.3.5-2
 - Added support for PHP7 (with mysqli interface)
 - Moved MDB2 library to composer

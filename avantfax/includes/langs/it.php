@@ -24,8 +24,8 @@ $LANG['YES'] = "Sì";
 $LANG['NO'] = "No";
 
 $LANG['DATE'] = "Data";
-$LANG['FROM'] = "Da";
-$LANG['TO'] = "A";
+$LANG['FROM'] = "Mittente";
+$LANG['TO'] = "Destinatario";
 
 $LANG['DATE_START'] = "Data inizio";
 $LANG['DATE_END'] = "Data fine";
@@ -156,9 +156,9 @@ $LANG['EMAIL_FAILURE'] = "L'email NON è stata inviata.";
 $LANG['PN_PAGE'] = "Pagina";
 $LANG['PN_PAGE_UP'] = "Pagina Su";
 $LANG['PN_PAGE_DN'] = "Pagina Giù";
-$LANG['PN_PAGES'] = "Pagine (Num/Tot)";
+$LANG['PN_PAGES'] = "Pagine";
 $LANG['PN_OF'] = "di";
-$LANG['NUM_DIALS'] = "Tentativi (Num/Tot)";
+$LANG['NUM_DIALS'] = "Tentativi";
 $LANG['KILL_JOB'] = "Annulla fax";
 
 $LANG['PROMPT_CLOSEWINDOW'] = "Chiudi finestra";
@@ -311,16 +311,16 @@ $LANG['BARCODEROUTE_DOESNT_EXIST'] = "La regola del codice a barre %s non esiste
 $LANG['FAXCAT_NOT_CREATED'] = "La categoria di Fax '%s' non è stata creata";
 $LANG['FAXCAT_ALREADY_EXISTS'] = "La categoria di Fax '%s' è già esistente";
 
-$LANG['FAX_FAILED'] = "Errore in spedizione del fax.";
-$LANG['FAX_WHY']["done"] = "Spedito";
-$LANG['FAX_WHY']["format_failed"] = "formato del fax fallito";
+$LANG['FAX_FAILED'] = "Errore nella spedizione del fax";
+$LANG['FAX_WHY']["done"] = "spedito";
+$LANG['FAX_WHY']["format_failed"] = "formato invalido";
 $LANG['FAX_WHY']["no_formatter"] = "nessun formattatore";
 $LANG['FAX_WHY']["poll_no_document"] = "nessun documento in polling";
-$LANG['FAX_WHY']["killed"] = "terminato";
+$LANG['FAX_WHY']["killed"] = "annullato";
 $LANG['FAX_WHY']["rejected"] = "rifiutato";
 $LANG['FAX_WHY']["blocked"] = "bloccato";
 $LANG['FAX_WHY']["removed"] = "rimosso";
-$LANG['FAX_WHY']["timedout"] = "fuori tempo";
+$LANG['FAX_WHY']["timedout"] = "timeout";
 $LANG['FAX_WHY']["poll_rejected"] = "polling rifiutato";
 $LANG['FAX_WHY']["poll_failed"] = "polling fallito";
 $LANG['FAX_WHY']["requeued"] = "rimesso in coda";

@@ -178,7 +178,7 @@
 	if ($company = $addressbook->get_company()) {} else { $company = $external; }
 	
 	// send confirmation email the fax to sender
-	$subject	= "fax: $company " . strftime(EMAIL_DATE_FORMAT);
+	$subject	= "Fax report: $company " . strftime(EMAIL_DATE_FORMAT);
 	$text		= "${LANG['TO']}: $company";
 	
 	if ($desc = $addressbook->get_description()) $text .= " ($desc)";
@@ -186,7 +186,7 @@
 
 	// if fatal, notify sender
 	if ($fatal) {
-		$subject	= $LANG['FAX_WHY'][$why]." $subject";
+		$subject	= "Fax {$LANG['FAX_WHY'][$why]}: $company" . strftime(EMAIL_DATE_FORMAT);
 		$text		= $LANG['FAX_FAILED'].": ".$LANG['FAX_WHY'][$why]." $status\n\n$text";
 		
 		// create the temp directory

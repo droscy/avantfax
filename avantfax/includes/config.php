@@ -19,7 +19,7 @@
 		exit("Error: register_globals must be set to Off in /etc/php.ini");
 	}
 	
-	$AVANTFAX_VERSION	= '3.3.5-2';
+	$AVANTFAX_VERSION	= '3.3.5-3';
 	
 	$INSTALLDIR	= realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR);
 	
