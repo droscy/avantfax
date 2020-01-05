@@ -44,7 +44,7 @@
         private function __unset($varname)
         private function __isset($varname)
         private function __get($varname)
-        private function __set($varname, $value)
+        public function __set($varname, $value)
         private function load_vals(array $data)
 */
 
@@ -797,7 +797,7 @@ class AFUserAccount
 	 * @return void
 	 * @access private
 	 */
-	private function __set($varname, $value) {
+	public function __set($varname, $value) {
 		// except for email, username and password
 		$this->dbdata[$varname] = $value;
 		
