@@ -1,5 +1,8 @@
 -- AvantFAX 3.3.5 MySQL structure
 
+-- set database name
+use avantfax;
+
 -- Distribution Lists
 CREATE TABLE IF NOT EXISTS DistroList (
 dl_id           INT auto_increment KEY,

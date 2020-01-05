@@ -1,0 +1,5 @@
+-- AvantFAX 3.3.5 MySQL structure
+
+DROP DATABASE IF EXISTS avantfax;
+CREATE DATABASE avantfax DEFAULT CHARACTER SET utf8;
+

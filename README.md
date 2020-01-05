@@ -4,7 +4,7 @@ AvantFAX is a web based front-end for the [HylaFAX](http://www.hylafax.org/) fax
 It was developed with Object Oriented PHP and MySQL.
 This will allow administrators to use a browser to manage users, their permissions, fax lines, categories, etc; and will allow users on any platform to view and send faxes while on the local network or away from the office.
 
-AvantFAX was written by David D. Mimms, Jr. `david(at)avantfax.com`
+AvantFAX was written by David D. Mimms, Jr. `david(at)avantfax.com`. Many other contributors are listed in `CONTRIBUTORS.txt` file.
 
 This software is licensed under the terms of the GNU General Public License, version 2 (see [http://www.fsf.org/licenses/gpl.html](http://www.fsf.org/licenses/gpl.html)).
 Derivative works and later versions of the code will also be considered free software licensed under the same terms.
@@ -20,6 +20,5 @@ If you need commercial support, you can contact:
  * YetOpen S.r.l. [http://www.yetopen.it/](http://www.yetopen.it/)
  * AUnited Co. Ltd. [http://aunited.ru/](http://aunited.ru/)
 
-
 ### Translations
-If you would like to add support for your language, please go to the transifex [https://www.transifex.com/projects/p/avantfax/](https://www.transifex.com/projects/p/avantfax/).
+If you would like to add support for your language, feel free to add (or improve) files in folder `avantfax/includes/langs/`.

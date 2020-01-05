@@ -95,13 +95,25 @@ Settings of interest:
 
 If you feel your system is ready for installation, here are the steps:
 
- 1- Move the avantfax/ directory to it's installation location (ex: /srv/www/avantfax)
+ 1- Move the avantfax/ directory to its installation location (ex: /srv/www/avantfax)
+    and set the right permissions on files and folders.
 
-    Example:
-    # mv avantfax /var/www/
+    # mv avantfax /srv/www/
     # chown -R apache.apache /srv/www/avantfax
-    # chmod -R 0770 /srv/www/avantfax/tmp /srv/www/avantfax/faxes
     # chown -R apache.uucp /srv/www/avantfax/tmp /srv/www/avantfax/faxes
+    # chmod -R 0770 /srv/www/avantfax/tmp /srv/www/avantfax/faxes
+    # find /srv/www/avantfax/faxes/ -type d -exec chmod 770 {} +
+    # find /srv/www/avantfax/faxes/ -type f \! -name index.html -exec chmod 664 {} +
+    # find /srv/www/avantfax/faxes/ -type f -name index.html -exec chmod 644 {} +
+    # find /srv/www/avantfax/includes/templates/ -type d -name templates_c -exec chmod 775 {} +
+    # chmod 755 \
+        /srv/www/avantfax/tools/* \
+        /srv/www/avantfax/includes/avantfaxcron.php \
+        /srv/www/avantfax/includes/dynconf.php \
+        /srv/www/avantfax/includes/faxcover.php \
+        /srv/www/avantfax/includes/faxrcvd.php \
+        /srv/www/avantfax/includes/notify.php \
+        /srv/www/avantfax/includes/phb.php
 
 
  2- Symlink AvantFAX's faxrcvd and notify scripts to your HylaFAX spool bin directory.
@@ -115,7 +127,6 @@ If you feel your system is ready for installation, here are the steps:
  3- Modify the modem config files for the devices you want to use with AvantFAX.
     You can add the following to the bottom of the config.devid file (ie: ttyS1 or boston03).
 
-    Example:
     # vim /var/spool/hylafax/etc/config.ttyS1
     
       #
@@ -134,41 +145,42 @@ If you feel your system is ready for installation, here are the steps:
       NotifyCmd:      bin/notify.php
 
 
- 4- Make sure PEAR Mail_mime is installed.
+ 4- Download composer packages (execute with your apache user).
 
-    Example:
-    # pear install Mail Net_SMTP Mail_mime MDB2_driver_mysql
+    # cd /srv/www/avantfax
+    # composer install
 
 
  5- Make your AvantFAX database. At the prompt, enter your MySQL root password.
+    WARNING: the script create_database.sql will drop an existing 'avantfax' database!
 
-    Example:
-    # mysql -uroot -p < create_user.sql
-    # mysql -uavantfax -pd58fe49 avantfax < create_tables.sql
+    # mysql -u root -p < create_database.sql
+    # mysql -u root -p < create_user.sql
+    # mysql -u avantfax -pd58fe49 avantfax < create_tables.sql
 
 
  6- Add two scripts to avantfax's crontab (/etc/cron.d/avantfax): one for creating 
     a phonebook file for WHFC; the other for removing AvantFAX temporary files,
     automatically archiving faxes, and automatically deleting faxes from the Archive.
 
-    Example: /etc/cron.d/avantfax
+    # vim /etc/cron.d/avantfax
 
-      # runs once an hour to update the phone book
-      0 * * * * /srv/www/avantfax/includes/phb.php
-      # runs once a day to remove old files
-      0 0 * * * /srv/www/avantfax/includes/avantfaxcron.php -t 2
+      # runs once a day to update the phone book
+      0 0 * * * apache /srv/www/avantfax/includes/phb.php
+
+      # runs once a day to remove temp files older than 2 days
+      # and to archive faxes older than 14 days
+      0 0 * * * /srv/www/avantfax/includes/avantfaxcron.php -t 2 -i 14
 
     More information about avantfaxcron.php can by found by executing:
     # /srv/www/avantfax/includes/avantfaxcron.php
 
 
- 7- Comment out "Defaults requiretty" and add an entry for Apache to add and delete 
-    fax users, and to halt and reboot the server via sudo.
+ 7- Add an entry for Apache user to add and delete fax users via sudo.
 
-    Example:
     # visudo
     
-      www-data ALL=NOPASSWD: /usr/sbin/faxdeluser, /usr/sbin/faxadduser -u * -p * *
+      apache ALL=NOPASSWD: /usr/sbin/faxdeluser, /usr/sbin/faxadduser -u * -p * *
 
 
  8- You can now log into the admin to create user accounts. Login to the admin
@@ -212,7 +224,7 @@ to import your already received faxes:
  
 To import your sent faxes, try running this:
 
- # cd /var/spool/hylafax; for i in `ls doneq/q*`; do bin/notify.php $i done :30; done
+  # cd /var/spool/hylafax; for i in `ls doneq/q*`; do bin/notify.php $i done :30; done
 
  
 Important notes:
@@ -231,6 +243,12 @@ This fax interface was developed on Fedora Core 4 using:
     netpbm 10.31
     libpng 1.2.8
     libungif 4.1.3
+
+And tested later with Debian stretch with the following packages:
+
+  # aptitude install sudo wdiff rsync giflib-tools libtiff5-dev \
+      netpbm libnetpbm10-dev imagemagick psutils html2ps \
+      php7.0-cli php7.0-mysql php7.0-mbstring
 
 Apache 1 or an earlier version of Apache 2 will probably work because we have not
 configured anything special with Apache. We simply use the php5 module and have
